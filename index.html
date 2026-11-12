@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore The World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">Explore<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+
+        <a class="nav-btn" href="#destinations">Explore Now</a>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="small-title">DISCOVER THE WORLD</p>
+                <h1>Explore The <span>Beautiful World</span></h1>
+                <p class="description">
+                    Discover amazing places, explore different cultures and experience unforgettable journeys.
+                </p>
+                <a class="main-btn" href="#destinations">Start Exploring</a>
+            </div>
+        </section>
+
+        <section class="destinations" id="destinations">
+            <div class="section-heading">
+                <p class="small-title">YOUR NEXT ADVENTURE</p>
+                <h2>Popular Destinations</h2>
+                <p>Explore some of the most beautiful cities in the world.</p>
+            </div>
+
+            <article class="destination-card" aria-labelledby="cityName">
+                <div class="info-side">
+                    <p class="city-number" id="cityNumber">01 / 04</p>
+                    <p class="country" id="country">FRANCE</p>
+                    <h3 id="cityName" aria-live="polite">Paris</h3>
+                    <p class="city-description" id="cityDescription">
+                        Paris is one of the most beautiful cities in the world, famous for its art, architecture and romantic atmosphere.
+                    </p>
+
+                    <dl class="details">
+                        <div>
+                            <dt>Continent</dt>
+                            <dd id="continent">Europe</dd>
+                        </div>
+                        <div>
+                            <dt>Famous Food</dt>
+                            <dd id="food">Croissant, Macarons</dd>
+                        </div>
+                        <div>
+                            <dt>Famous Place</dt>
+                            <dd id="place">Eiffel Tower</dd>
+                        </div>
+                        <div>
+                            <dt>Language</dt>
+                            <dd id="language">French</dd>
+                        </div>
+                    </dl>
+
+                    <button class="explore-btn" id="exploreBtn" type="button">Explore More</button>
+                </div>
+
+                <div class="image-side">
+                    <img id="cityImage" src="images/paris.jpg" alt="Paris">
+                    <div class="image-badge" aria-hidden="true">
+                        <span>DESTINATION</span>
+                        <p id="imageNumber">01</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="slider-controls">
+                <button class="control-btn" id="prevBtn" type="button">← Previous</button>
+                <div class="dots" id="dots" role="group" aria-label="Choose a destination"></div>
+                <button class="control-btn" id="nextBtn" type="button">Next →</button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Travel. Discover. Enjoy.</h2>
+            <p>Every destination has a story. Let's discover it together.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Explore The World. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
